@@ -23,12 +23,13 @@ Cloud Platform. For local testing, you might need to find the appropriate inform
 - frontend.py: the user interface that you that users can chat with
 - Pipfile, Pipfile.lock: dependency file for running the codebase
 - 2 Dockerfile: docker build configuration for the api and frontend
+- compose.yaml: docker compose file to start and stop docker images
 
 ## Supplementary Materials
 ### Software Architecture
 - You can use TLDraw for diagramming: https://www.tldraw.com/ [you can use any other tool if you prefer, like LucidCharts, Miro etc.]
 ### Streamlit
-
+Here is something to get you started: https://dev.to/niveshbansal07/streamlit-beginner-guide-with-examples-317d
 ### API Design
 - Curl for testing your docker container locally: https://daniel.haxx.se/blog/2021/05/31/curl-localhost-as-a-local-host/
 ### Cloud Computing
