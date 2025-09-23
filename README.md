@@ -40,3 +40,4 @@ Here is something to get you started: https://dev.to/niveshbansal07/streamlit-be
 - Docker image to Docker Hub: https://docs.docker.com/get-started/04_sharing_app/
 - Firewall Rules on GCP: https://www.howtogeek.com/devops/how-to-open-firewall-ports-on-a-gcp-compute-engine-instance/
 - In case you would like to work using your local terminal: https://cloud.google.com/sdk/docs/install-sdk#linux
+- Docker Compose: https://betterstack.com/community/guides/scaling-docker/docker-compose-getting-started/
