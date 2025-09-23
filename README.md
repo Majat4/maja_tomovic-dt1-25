@@ -3,9 +3,9 @@
 The assignment description and requirements are on Moodle.
 
 ## Introduction
-The small flask application presented here is a proxy that we use to interact with Huggingface Inference API.
-Your job is to deploy and interact with Huggingface API using this proxy. The interface will be built
-using no-code Bubble. </br></br>
+The small flask application presented here is a proxy that we use to interact with OpenRouter API.
+Your job is to deploy and interact with OpenRouter API using this proxy. The interface will be built
+using Streamlit. </br></br>
 This assignment covers the first 3 learning cycles:
 - Software Architecture
 - API Design
@@ -15,7 +15,7 @@ Different aspects of the assignment covers all the three cycles. Please go back 
 in case there is something you don't understand. In addition, we provide materials here that we believe
 will act as hints for successfully completing the assignment.
 
-**NOTE: The code has been developed and tested on Ubuntu (Debian). This is the OS you will be using on the Google 
+**NOTE: The code has been developed and tested on Ubuntu (Debian)/MacOS. You will be using Ubuntu on the Google 
 Cloud Platform. For local testing, you might need to find the appropriate information and corresponding adjustments.**
 
 ## Codebase
