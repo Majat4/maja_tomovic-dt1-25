@@ -1,8 +1,9 @@
-version: "3.9"
-
 services:
   frontend:
-    image: dt1_frontend:latest
+    image: majat4/dt1-frontend:v1
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
     ports:
       - "8501:8501"
     depends_on:
@@ -11,6 +12,9 @@ services:
       - .env
 
   api:
-    image: dt1_api:latest
+    image: majat4/dt1-backend:v1
+    build:
+      context: .
+      dockerfile: Dockerfile.api
     ports:
       - "5001:5001"
