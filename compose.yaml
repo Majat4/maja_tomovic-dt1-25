@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   frontend:
-    image: your-dockerhub-username/llm-frontend:latest
+    image: majat4/llm-frontend:latest
     build:
       context: .
       dockerfile: Dockerfile.frontend
@@ -14,7 +14,7 @@ services:
       - .env
 
   api:
-    image: your-dockerhub-username/llm-api:latest
+    image: majat4/llm-api:latest
     build:
       context: .
       dockerfile: Dockerfile.api
