@@ -1,8 +1,9 @@
-version: "3.9"
-
 services:
   frontend:
+HEAD
     image: majat4/llm-frontend:latest
+    image: majat4/dt1-frontend:v1
+e6a9214ab3a87a9d686c351ac987c3cf596b20fc
     build:
       context: .
       dockerfile: Dockerfile.frontend
@@ -14,7 +15,10 @@ services:
       - .env
 
   api:
+HEAD
     image: majat4/llm-api:latest
+    image: majat4/dt1-backend:v1
+e6a9214ab3a87a9d686c351ac987c3cf596b20fc
     build:
       context: .
       dockerfile: Dockerfile.api
