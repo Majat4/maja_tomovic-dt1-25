@@ -1,43 +1,55 @@
-# DT1 2025 : Enabling Technologies, Assignment 1
+# DT1 Assignment - LLM Text Completion System
 
-The assignment description and requirements are on Moodle.
+## Project Overview
+This project implements a full-stack LLM (Large Language Model) text completion system with a Streamlit frontend and Flask backend, deployed on Google Cloud Platform using Docker containers.
 
-## Introduction
-The small flask application presented here is a proxy that we use to interact with OpenRouter API.
-Your job is to deploy and interact with OpenRouter API using this proxy. The interface will be built
-using Streamlit. </br></br>
-This assignment covers the first 3 learning cycles:
-- Software Architecture
-- API Design
-- Cloud Computing
+## System Architecture
 
-Different aspects of the assignment covers all the three cycles. Please go back to the lecture materials
-in case there is something you don't understand. In addition, we provide materials here that we believe
-will act as hints for successfully completing the assignment.
+### Components
+1. **Frontend**: Streamlit web application (Port 8501)
+2. **Backend**: Flask API server (Port 8000) 
+3. **External Service**: OpenRouter API for LLM inference
+4. **Infrastructure**: Google Cloud Platform VM with Docker
 
-**NOTE: The code has been developed and tested on Ubuntu (Debian)/MacOS. You will be using Ubuntu on the Google 
-Cloud Platform. For local testing, you might need to find the appropriate information and corresponding adjustments.**
+### Architecture Diagram
 
-## Codebase
-- api.py: contains all the code for the api layer including the API routes
-- frontend.py: the user interface that you that users can chat with
-- Pipfile, Pipfile.lock: dependency file for running the codebase
-- 2 Dockerfile: docker build configuration for the api and frontend
-- compose.yaml: docker compose file to start and stop docker images
+User 
+  │
+  ↓ HTTP Requests
+[Streamlit Frontend:8501]
+  │
+  ↓ API Calls  
+[Flask Backend:8000]
+  │
+  ↓ OpenRouter API
+[LLM Models]
+  │
+  ↓ Responses
+[Streamlit Frontend]
 
-## Supplementary Materials
-### Software Architecture
-- You can use TLDraw for diagramming: https://www.tldraw.com/ [you can use any other tool if you prefer, like LucidCharts, Miro etc.]
-### Streamlit
-Here is something to get you started: https://dev.to/niveshbansal07/streamlit-beginner-guide-with-examples-317d
-### API Design
-- Curl for testing your docker container locally: https://daniel.haxx.se/blog/2021/05/31/curl-localhost-as-a-local-host/
-### Cloud Computing
-- Installing Docker on Debian: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-debian-10
-- You can use ```sudo passwd``` to set the password once you login to your GCP VM.
-- Dockerize your application: https://docs.docker.com/get-started/02_our_app/
-- Run Dockerfile: https://docs.docker.com/language/java/run-containers/
-- Docker image to Docker Hub: https://docs.docker.com/get-started/04_sharing_app/
-- Firewall Rules on GCP: https://www.howtogeek.com/devops/how-to-open-firewall-ports-on-a-gcp-compute-engine-instance/
-- In case you would like to work using your local terminal: https://cloud.google.com/sdk/docs/install-sdk#linux
-- Docker Compose: https://betterstack.com/community/guides/scaling-docker/docker-compose-getting-started/
+## Prerequisites
+- Docker & Docker Compose
+- Google Cloud Platform account
+- OpenRouter API account
+- Python 3.10+
+
+## Setup Instructions
+
+### 1. Clone Repository
+```bash
+git clone <your-repository-url>
+cd dt1-25
+
+### 2. Environment Configuration
+Create `.env` file:
+```env
+OPENROUTER_API_KEY=your_openrouter_api_key_here
+
+## Account Information
+
+- **GitHub**: majat4
+- **Docker Hub**: majat4
+
+## Contributors
+- Maja Tomovic - Primary developer
+- Sid Singh (sid027) - Added as contributor for evaluation
