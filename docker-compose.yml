@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  api:
+    image: majat4/llm-api:latest
+    container_name: llm-api
+    environment:
+      - "OPENROUTER_API_KEY=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"
+    ports:
+      - "5001:5001"
+    restart: always
+
+  frontend:
+    image: majat4/llm-frontend:latest
+    container_name: llm-frontend
+    environment:
+      - BASE_URI=http://llm-api:5001
+    ports:
+      - "8501:8501"
+    restart: always
